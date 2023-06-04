@@ -12,33 +12,38 @@ import "./index.css";
 
 const NavBar = () => {
   const links = [
-    { to: "/", label: "home" },
+    { to: "/", label: "Edward Ho" },
     { to: "/recentworks", label: "Recent Works" },
     { to: "/contact", label: "Contact" },
   ];
 
   return (
     <div>
-      <Flex className="menu">
-        <Menu className="menuBar">
-          {links.map((link) => (
-            <MenuButton
-              key={link.to}
-              as={RouterLink}
-              to={link.to}
-              className="menuTab"
-            >
-              {link.label}
-            </MenuButton>
-          ))}
+      <Menu>
+        <Flex className="menu">
+          <MenuButton as={RouterLink} to={links[0].to} className="menuLeft">
+            {links[0].label}
+          </MenuButton>
+          <section className="menuBar">
+            {links.slice(1, 3).map((link) => (
+              <MenuButton
+                key={link.to}
+                as={RouterLink}
+                to={link.to}
+                className="menuRight"
+              >
+                {link.label}
+              </MenuButton>
+            ))}
 
-          <Avatar
-            name="Dan Abrahmov"
-            src="https://bit.ly/dan-abramov"
-            className="avatar"
-          />
-        </Menu>
-      </Flex>
+            <Avatar
+              name="Dan Abrahmov"
+              src="https://bit.ly/dan-abramov"
+              className="avatar"
+            />
+          </section>
+        </Flex>
+      </Menu>
     </div>
   );
 };
