@@ -7,7 +7,7 @@ test("navbar navigation", () => {
   render(<App />);
 
   // Assert that the initial page (Home) is rendered
-  expect(screen.getByText(/home/i)).toBeInTheDocument();
+  expect(screen.getByText(/React developer/i)).toBeInTheDocument();
 
   // // Simulate a click on the "Recent Works" link
   fireEvent.click(screen.getByText(/recent works/i));
