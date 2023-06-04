@@ -10,3 +10,9 @@ test("image count test", () => {
   // Assert that image card is three
   expect(cards.length).toBe(3);
 });
+
+test("conditional rendering based on selected card", () => {
+  render(<RecentWorks />);
+  const selectedCard = screen.getByTestId("card");
+  expect(selectedCard).toBeInTheDocument();
+});

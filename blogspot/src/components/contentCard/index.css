@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  top: 73%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  margin-top: -72px;
+}
