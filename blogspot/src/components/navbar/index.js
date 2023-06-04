@@ -1,13 +1,6 @@
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {
-  Menu,
-  MenuButton,
-  Avatar,
-  MenuList,
-  MenuItem,
-  Flex,
-} from "@chakra-ui/react";
+import { Menu, MenuButton, Avatar, Flex } from "@chakra-ui/react";
 import "./index.css";
 
 const NavBar = () => {
