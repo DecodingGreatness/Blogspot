@@ -15,5 +15,5 @@ test("profile image", () => {
   const profileImage = screen.getByAltText("profile");
   expect(profileImage).toBeInTheDocument();
   expect(profileImage.width).toBe(490);
-  expect(profileImage.height).toBe(625);
+  expect(profileImage.height).toBe(520);
 });
