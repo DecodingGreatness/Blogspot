@@ -13,7 +13,7 @@ test("navbar navigation", () => {
   fireEvent.click(screen.getByText(/recent works/i));
 
   // // Assert that the RecentWorks page is rendered
-  expect(screen.getByText(/recent works/i)).toBeInTheDocument();
+  expect(screen.getByText(/read more/i)).toBeInTheDocument();
 
   // Simulate a click on the "Contact" link
   fireEvent.click(screen.getByText(/contact/i));
