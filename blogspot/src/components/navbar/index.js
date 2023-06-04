@@ -2,14 +2,9 @@ import React from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { Menu, MenuButton, Avatar, Flex } from "@chakra-ui/react";
 import "./index.css";
+import { links } from "../../constant";
 
 const NavBar = () => {
-  const links = [
-    { to: "/", label: "Edward Ho" },
-    { to: "/recentworks", label: "Recent Works" },
-    { to: "/contact", label: "Contact" },
-  ];
-
   return (
     <div>
       <Menu>

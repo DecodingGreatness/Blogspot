@@ -2,13 +2,15 @@ import React from "react";
 import { Card, CardBody } from "@chakra-ui/react";
 import "./index.css";
 
-const ImageCard = ({ src, alt }) => {
+const ImageCard = ({ src, alt, name }) => {
   return (
-    <Card>
-      <CardBody>
-        <img src={src} alt={alt} />
-      </CardBody>
-    </Card>
+    <div data-testid={name}>
+      <Card>
+        <CardBody>
+          <img src={src} alt={alt} />
+        </CardBody>
+      </Card>
+    </div>
   );
 };
 
